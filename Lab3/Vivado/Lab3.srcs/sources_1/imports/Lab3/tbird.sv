@@ -108,15 +108,75 @@ always_comb begin
    nextState <= currState;
     
    // Your FSM code goes here
+   // assuming LED is active high
    case (currState)
        ST_OFF : begin
            // Placeholder code
-           if (hazardEnable) LEDS <= 4'b1111;
-           if (leftSwitch) LEDS <= 4'b1110;
-           if (rightSwitch) LEDS <= 4'b0111;
+           if (hazardEnable) begin
+               LEDS <= 4'b1111;
+               nextState <= ST_HON;
+           end
+           if (leftSwitch) begin
+               //LEDS <= 4'b1110;
+               LEDS <= 4'b0010; // this way seems more correct
+               nextState <= ST_L1;
+           end
+           if (rightSwitch) begin
+               //LEDS <= 4'b0111;
+               LEDS <= 4'b0100; // this way seems more correct
+               nextState <= ST_R1;
+           end
        end
+
+       // LEFT
+       ST_L1 : begin
+           LEDS <= 4'b0110;
+           nextState <= ST_L2;
+       end
+
+       ST_L2 : begin
+           LEDS <= 4'b1110;
+           nextState <= ST_L3;
+       end
+
+       ST_L3 : begin
+           LEDS <= 4'b0000;
+           nextState <= ST_OFF;
+       end
+
+       // RIGHT
+       ST_R1 : begin
+           LEDS <= 4'b0110;
+           nextState <= ST_R2;
+       end
+
+       ST_R2 : begin
+           LEDS <= 4'b0111;
+           nextState <= ST_R3;
+       end
+
+       ST_R3 : begin
+           LEDS <= 4'b0111;
+           nextState <= ST_OFF;
+       end
+
+       // HAZARDS
+       ST_HON : begin
+           LEDS <= 4'b0000;
+           nextState <= ST_HOFF;
+
+           if (hazardEnable) begin
+               nextState <= ST_OFF;
+           end
+       end
+
+       ST_HOFF : begin
+           LEDS <= 4'b1111;
+           nextState <= ST_HON;
+       end
+
        default: nextState <= ST_OFF;
-   endcase            
+   endcase
 end
 
 always_ff @(posedge slowClk) begin
