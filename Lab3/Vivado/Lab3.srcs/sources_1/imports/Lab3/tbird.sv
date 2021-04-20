@@ -79,53 +79,53 @@ debouncer #(.SIM_ONLY(SIM_ONLY))
 
 // FSM
 
-// One-process - comment this out if you want to write a two-process FSM
-always_ff @(posedge slowClk) begin
+// // One-process - comment this out if you want to write a two-process FSM
+// always_ff @(posedge slowClk) begin
 
-    LEDS <= 4'b0;
+//     LEDS <= 4'b0;
     
-    // Your FSM code goes here
-    case (state)
-        ST_OFF : begin
-            // Placeholder code
-            if (hazardEnable) LEDS <= 4'b1111;
-            if (leftSwitch) LEDS <= 4'b1110;
-            if (rightSwitch) LEDS <= 4'b0111;
-        end
-        default: state <= ST_OFF;
-    endcase
+//     // Your FSM code goes here
+//     case (state)
+//         ST_OFF : begin
+//             // Placeholder code
+//             if (hazardEnable) LEDS <= 4'b1111;
+//             if (leftSwitch) LEDS <= 4'b1110;
+//             if (rightSwitch) LEDS <= 4'b0111;
+//         end
+//         default: state <= ST_OFF;
+//     endcase
     
-    // Reset
-    if (slowReset) begin
-        state <= ST_OFF;
-    end
+//     // Reset
+//     if (slowReset) begin
+//         state <= ST_OFF;
+//     end
+// end
+
+// Two-process - uncomment if you want to write a two-process FSM
+always_comb begin
+    
+   LEDS      <= 4'b0;
+   nextState <= currState;
+    
+   // Your FSM code goes here
+   case (currState)
+       ST_OFF : begin
+           // Placeholder code
+           if (hazardEnable) LEDS <= 4'b1111;
+           if (leftSwitch) LEDS <= 4'b1110;
+           if (rightSwitch) LEDS <= 4'b0111;
+       end
+       default: nextState <= ST_OFF;
+   endcase            
 end
 
-//// Two-process - uncomment if you want to write a two-process FSM
-//always_comb begin
-    
-//    LEDS      <= 4'b0;
-//    nextState <= currState;
-    
-//    // Your FSM code goes here
-//    case (currState)
-//        ST_OFF : begin
-//            // Placeholder code
-//            if (hazardEnable) LEDS <= 4'b1111;
-//            if (leftSwitch) LEDS <= 4'b1110;
-//            if (rightSwitch) LEDS <= 4'b0111;
-//        end
-//        default: nextState <= ST_OFF;
-//    endcase            
-//end
-
-//always_ff @(posedge slowClk) begin
-//    if (slowReset) begin
-//        currState <= ST_OFF;
-//    end else begin
-//        currState <= nextState;
-//    end
-//end
+always_ff @(posedge slowClk) begin
+   if (slowReset) begin
+       currState <= ST_OFF;
+   end else begin
+       currState <= nextState;
+   end
+end
 
 
 //
