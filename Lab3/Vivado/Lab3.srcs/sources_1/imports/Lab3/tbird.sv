@@ -156,7 +156,7 @@ always_comb begin
        end
 
        ST_R3 : begin
-           LEDS <= 4'b0111;
+           LEDS <= 4'b0000;
            nextState <= ST_OFF;
        end
 
@@ -165,7 +165,7 @@ always_comb begin
            LEDS <= 4'b0000;
            nextState <= ST_HOFF;
 
-           if (hazardEnable) begin
+           if (!hazardEnable) begin
                nextState <= ST_OFF;
            end
        end
