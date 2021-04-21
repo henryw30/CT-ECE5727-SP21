@@ -52,10 +52,22 @@ begin
     #DELAY      LEFT = 1'b1; // Turn on left signal
     #(10*DELAY) LEFT = 1'b0; // Turn off left signal
     
+    // turn on hazard?
     #DELAY      HAZARD_BTN = 1'b1;
     #20         HAZARD_BTN = 1'b0;
     #20         HAZARD_BTN = 1'b1;
     #(2*DELAY)  HAZARD_BTN = 1'b0;
+    
+    // turn off hazard?
+    #(10*DELAY)      HAZARD_BTN = 1'b1;
+    #20         HAZARD_BTN = 1'b0;
+    #20         HAZARD_BTN = 1'b1;
+    #(2*DELAY)  HAZARD_BTN = 1'b0;
+    
+    
+    // turn on right
+    #DELAY      RIGHT = 1'b1; // Turn on left signal
+    #(10*DELAY) RIGHT = 1'b0; // Turn off left signal
 
 end
 
