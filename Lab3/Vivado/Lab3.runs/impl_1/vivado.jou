@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 20:56:05 2021
+# Process ID: 16255
+# Current directory: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.runs/impl_1
+# Command line: vivado -log tbird.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source tbird.tcl -notrace
+# Log file: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.runs/impl_1/tbird.vdi
+# Journal file: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source tbird.tcl -notrace

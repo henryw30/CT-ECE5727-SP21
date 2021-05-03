@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:07:21 2021
+# Process ID: 2370
+# Current directory: /home/henry/Repos/CT-ECE5727-SP21
+# Command line: vivado
+# Log file: /home/henry/Repos/CT-ECE5727-SP21/vivado.log
+# Journal file: /home/henry/Repos/CT-ECE5727-SP21/vivado.jou
+#-----------------------------------------------------------
+start_gui
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-10:1.0]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-10:1.0]
+xhub::refresh_catalog <xstores>
+xhub::refresh_catalog
+xhub::refresh_catalog -help

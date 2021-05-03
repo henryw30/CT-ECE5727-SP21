@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:44:51 2021
+# Process ID: 6425
+# Current directory: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/xsim_webtalk.tcl -notrace

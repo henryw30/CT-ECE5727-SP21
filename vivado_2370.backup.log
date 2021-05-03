@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:07:21 2021
+# Process ID: 2370
+# Current directory: /home/henry/Repos/CT-ECE5727-SP21
+# Command line: vivado
+# Log file: /home/henry/Repos/CT-ECE5727-SP21/vivado.log
+# Journal file: /home/henry/Repos/CT-ECE5727-SP21/vivado.jou
+#-----------------------------------------------------------
+start_gui
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-10:1.0]
+WARNING: [xhubtcl 76-56] No objects matched with given name : digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 in xhub database,invoke command 'xhub::refresh_catalog <xstores>' to sync xhub database with remote repositories. 
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-10:1.0]
+WARNING: [xhubtcl 76-56] No objects matched with given name : digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 in xhub database,invoke command 'xhub::refresh_catalog <xstores>' to sync xhub database with remote repositories. 
+xhub::refresh_catalog <xstores>
+ERROR: [Common 17-161] Invalid option value '<xstores>' specified for 'stores'.
+xhub::refresh_catalog
+ERROR: [Common 17-163] Missing value for option 'stores', please type 'xhub::refresh_catalog -help' for usage info.
+xhub::refresh_catalog -help
+xhub::refresh_catalog
+
+Description: 
+Refresh xstore(s).
+Syncs all xitem(s) from xstore(s), to indicate if there is an update.
+Also updates the xitem(s) list of xstore(s), if there is any xitem(s) added/removed
+
+Syntax: 
+xhub::refresh_catalog  [-quiet] [-verbose] <stores>...
+
+Returns: 
+xstore object
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <stores>    xstores to refresh
+
+Categories: 
+XHub
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 20 19:32:10 2021...

@@ -1,0 +1,1071 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:34:17 2021
+# Process ID: 5384
+# Current directory: /home/henry/Repos/CT-ECE5727-SP21
+# Command line: vivado
+# Log file: /home/henry/Repos/CT-ECE5727-SP21/vivado.log
+# Journal file: /home/henry/Repos/CT-ECE5727-SP21/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.xpr
+INFO: [Project 1-313] Project file moved from 'S:/danme/Documents/GitHub/CT-ECE5727-SP21/Lab3' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/danme/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.gen/sources_1', nor could it be found using path '/home/henry/Repos/CT-ECE5727-SP21/S:/danme/Documents/GitHub/CT-ECE5727-SP21/Lab3/Lab3.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.ip_user_files', nor could it be found using path '/home/henry/Repos/CT-ECE5727-SP21/S:/danme/Documents/GitHub/CT-ECE5727-SP21/Lab3/Lab3.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 7274.770 ; gain = 33.043 ; free physical = 4142 ; free virtual = 8424
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_gen'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.ip_user_files/ip/clk_gen/clk_gen_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-311] analyzing module clk_gen_clk_gen_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/glbl.v:6]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr 20 19:40:05 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 20 19:40:05 2021...
+run_program: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 7343.805 ; gain = 0.000 ; free physical = 3988 ; free virtual = 8408
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 7435.625 ; gain = 82.855 ; free physical = 3919 ; free virtual = 8351
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 7435.625 ; gain = 91.820 ; free physical = 3919 ; free virtual = 8351
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3914 ; free virtual = 8346
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3891 ; free virtual = 8323
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3902 ; free virtual = 8335
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3892 ; free virtual = 8325
+run .25 us
+run .25 us
+run .25 us
+run .25 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3886 ; free virtual = 8319
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3896 ; free virtual = 8329
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7435.625 ; gain = 0.000 ; free physical = 3891 ; free virtual = 8324
+run .25 us
+run .25 us
+run .25 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 7472.289 ; gain = 27.996 ; free physical = 3716 ; free virtual = 8185
+run .25 s
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3702 ; free virtual = 8191
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:32 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3722 ; free virtual = 8191
+run .25 s
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3709 ; free virtual = 8194
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3716 ; free virtual = 8186
+run .25 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3638 ; free virtual = 8108
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3603 ; free virtual = 8073
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3596 ; free virtual = 8067
+run .25 us
+run .75 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7472.289 ; gain = 0.000 ; free physical = 3602 ; free virtual = 8073
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7479.293 ; gain = 7.004 ; free physical = 3600 ; free virtual = 8071
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+run 3 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7487.297 ; gain = 8.004 ; free physical = 3620 ; free virtual = 8091
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7495.301 ; gain = 8.004 ; free physical = 3612 ; free virtual = 8083
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7503.305 ; gain = 8.004 ; free physical = 3625 ; free virtual = 8097
+run 10 us
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/imports/Lab3/debouncer.sv" Line 1. Module debouncer(SIM_ONLY=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module xil_defaultlib.clk_gen_clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.debouncer(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird(SIM_ONLY=1)
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7519.312 ; gain = 16.008 ; free physical = 3622 ; free virtual = 8094
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7519.312 ; gain = 0.000 ; free physical = 3621 ; free virtual = 8092
+run 6.5 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.sim/sim_1/behav/xsim'
+xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto eb9c4144e8ad4a549039f8e6b8219eb4 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7519.312 ; gain = 0.000 ; free physical = 3618 ; free virtual = 8090
+run 6.0 us
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.srcs/sources_1/ip/clk_gen/clk_gen.xci' is already up-to-date
+[Tue Apr 20 20:55:04 2021] Launched synth_1...
+Run output will be captured here: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.runs/synth_1/runme.log
+[Tue Apr 20 20:55:04 2021] Launched impl_1...
+Run output will be captured here: /home/henry/Repos/CT-ECE5727-SP21/Lab3/Vivado/Lab3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7519.312 ; gain = 0.000 ; free physical = 3374 ; free virtual = 7928
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7748.230 ; gain = 0.000 ; free physical = 2853 ; free virtual = 7407
+Restored from archive | CPU: 0.040000 secs | Memory: 0.318047 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7748.230 ; gain = 0.000 ; free physical = 2853 ; free virtual = 7407
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7748.230 ; gain = 0.000 ; free physical = 2853 ; free virtual = 7407
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 7943.211 ; gain = 423.898 ; free physical = 2762 ; free virtual = 7319
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 20 23:44:33 2021...
